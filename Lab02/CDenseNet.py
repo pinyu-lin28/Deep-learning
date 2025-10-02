@@ -90,9 +90,10 @@ class CDenseNet(nn.Module):
         current_channels = C_TL_out
 
     self.layer3 = nn.Sequential(
-        nn.AdaptiveAvgPool2d((1,1)),
+        nn.AdaptiveAvgPool2d((7,7)),
         nn.Flatten(),
         nn.Linear(C0, 128),
+        nn.ReLU(),
         nn.Linear(128, num_class)
     )
 
@@ -108,5 +109,6 @@ class CDenseNet(nn.Module):
       x = self.layer3(x)
 
       return x
+
 
 
