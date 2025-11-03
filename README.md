@@ -12,7 +12,7 @@ You can down load the dataset from Google drive:
 After dowloading, you should put these within folder named 'data'
 
 ### For Task 1:
-You will have to use the Jupyter notebook 'Lab01_task1.ipynb' as main code.
+You will have to use the Jupyter notebook 'Lab01_task1_111261022.ipynb' as main code.
 And then import the 'layer.py' and 'network.py' in the folder named 'model'
 
 
